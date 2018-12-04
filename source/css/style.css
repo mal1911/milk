@@ -22,9 +22,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #000000;
+  color: #495057;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Montserrat", sans-serif;
   line-height: 100%;
 }
@@ -40,8 +40,128 @@ body {
   border: 0;
 }
 
+.container {
+  min-width: 320px;
+  max-width: 1920px;
+}
+
+@media (min-width: 1920px) {
+  .container {
+    margin: 0 auto;
+    width: 1920px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1920px) {
+  .container {
+    width: 100%;
+  }
+}
+
 header {
   display: flex;
+}
+
+.main__header {
+  color: #455c16;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
+
+.slogan {
+  padding-top: 50px;
+  padding-right: 200px;
+  padding-bottom: 50px;
+  padding-left: 100px;
+  background-color: #e8e8e8;
+  background-image: url("../image/main1920.jpg");
+  background-position: top center;
+}
+
+.slogan__title {
+  color: #455c16;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 72px;
+}
+
+.slogan__text {
+  color: #495057;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.why-work .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.why-work__header {
+
+}
+
+.why-work__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.why-work__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+.why-work__item {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+  align-items: center;
+}
+
+.why-work__title {
+  text-align: center;
+}
+
+.why-work__text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.why-work__item:nth-child(2) {
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+.profit {
+  background-color: #fbf2b5;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.profit__block {
+  width: 50%;
+}
+
+.profit__list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.profit__item {
+  width: 250px;
+}
+
+.profit__item:nth-child(2n - 1) {
+  margin-right: 50px;
 }
 
 /*
@@ -72,23 +192,6 @@ a {
   display: none;
 }
 
-.container {
-  min-width: 320px;
-  max-width: 1920px;
-}
-
-@media (min-width: 1920px) {
-  .container {
-    margin: 0 auto;
-    width: 1920px;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 1920px) {
-  .container {
-    width: 100%;
-  }
-}
 
 .button {
   font-size: 70%;
