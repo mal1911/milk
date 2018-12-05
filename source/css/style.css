@@ -52,6 +52,7 @@ img {
 .container {
   min-width: 320px;
   max-width: 1920px;
+  box-sizing: border-box;
 }
 
 @media (min-width: 1920px) {
@@ -69,9 +70,9 @@ img {
 
 .header {
   display: flex;
-  margin-right: 50px;
-  margin-left: 50px;
-  padding-top: 135px;
+  margin-right: 35px;
+  margin-left: 35px;
+  padding-top: 30px;
   padding-bottom: 30px;
   justify-content: space-between;
   align-items: center;
@@ -94,9 +95,11 @@ img {
   line-height: 48px;
   align-items: center;
   justify-content: flex-start;
+  margin-bottom: 0;
 }
 
 .main__header::after {
+  margin-top: 18px;
   color: #495057;
   content: "~~~~~~~~::~~~~~~~~";
   font-size: 24px;
@@ -104,28 +107,37 @@ img {
 }
 
 .slogan {
-  padding-top: 50px;
-  padding-right: 200px;
+  background-image: linear-gradient(to bottom, #f0f8fb, #f4f8f9, #d5e6ef, #ddb776, #ecc894, #d5c6ae);
+}
+
+.slogan .container {
+  padding-top: 40px;
+  padding-right: 640px;
   padding-bottom: 50px;
-  padding-left: 100px;
-  background-color: #e8e8e8;
+  padding-left: 220px;
+
+
   background-image: url("../image/main1920.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+
 .slogan__title {
   color: #455c16;
   font-weight: 700;
   font-size: 72px;
-  line-height: 72px;
+  line-height: 80px;
+  margin-bottom: 50px;
 }
 
 .slogan__text {
   color: #495057;
   font-weight: 500;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 44px;
+  width: 750px;
+  padding-bottom: 361px;
 }
 
 .why-work .container {
@@ -135,41 +147,46 @@ img {
 }
 
 .why-work__header {
-
+  margin-top: 107px;
 }
 
 .why-work__title {
+  width: 700px;
+  margin-top: 4px;
   font-weight: 500;
   font-size: 24px;
   line-height: 40px;
 }
 
 .why-work__list {
+  margin-top: 54px;
   display: flex;
-  padding: 0;
+  padding: 0 0 85px 0;
   list-style: none;
   justify-content: center;
 }
 
 .why-work__item {
-  position: relative;
   display: flex;
   flex-direction: column;
   width: 420px;
   align-items: center;
+  justify-content: flex-start;
 }
 
-/*why-work__item why-work__item--gift*/
+.why-work__item:nth-child(2) {
+  margin-right: 160px;
+  margin-left: 160px;
+}
+
 
 .why-work__item::before {
-  position: absolute;
-  top: -50px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-position: center center;
   background-repeat: no-repeat;
   content: "";
+  margin-bottom: 20px;
 }
 
 .why-work__item--gift::before {
@@ -189,25 +206,25 @@ img {
 }
 
 .why-work__text {
+  margin-top: -15px;
+  width: 400px;
   text-align: center;
   font-size: 18px;
   line-height: 24px;
 }
 
-.why-work__item:nth-child(2) {
-  margin-right: 30px;
-  margin-left: 30px;
-}
-
 .profit {
   background-color: #fbf2b5;
+  display: flex;
 }
 
 .profit__header {
+  margin-top: 114px;
   align-items: flex-start;
 }
 
 .profit .container {
+  padding-left: 50px;
   background-image: url("../image/bg-profit960.jpg");
   background-position: top right;
   /*background-size: 959px, 980px;*/
@@ -215,34 +232,33 @@ img {
 }
 
 .profit__block {
-  padding-right: 50px;
-  padding-left: 50px;
   width: 50%;
 }
 
 .profit__list {
   display: flex;
-  padding: 0;
+  padding: 41px 0 69px 0;
   list-style: none;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .profit__item {
-  position: relative;
-  width: 250px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 57px;
 }
 
 .profit__item:nth-child(2n - 1) {
-  margin-right: 50px;
+  margin-right: 84px;
 }
 
 .profit__item::before {
-  position: absolute;
-  top: -50px;
-  left: 20px;
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   background-position: center center;
   background-repeat: no-repeat;
   content: "";
@@ -262,6 +278,19 @@ img {
 
 .profit__item--health::before {
   background-image: url("../image/icon-health.svg");
+}
+
+.profit__title {
+  margin-top: 10px;
+  /*width: 400px;*/
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+ }
+
+.profit__text {
+  font-size: 18px;
+  line-height: 24px;
 }
 
 .experiment {
