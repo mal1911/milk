@@ -29,6 +29,15 @@ body {
   line-height: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -58,15 +67,40 @@ body {
   }
 }
 
-header {
+.header {
   display: flex;
+  margin-right: 50px;
+  margin-left: 50px;
+  padding-top: 135px;
+  padding-bottom: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header_phone {
+  color: #495057;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+
 }
 
 .main__header {
+  display: flex;
+  flex-direction: column;
   color: #455c16;
   font-weight: 700;
   font-size: 48px;
   line-height: 48px;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.main__header::after {
+  color: #495057;
+  content: "~~~~~~~~::~~~~~~~~";
+  font-size: 24px;
+  line-height: 40px;
 }
 
 .slogan {
@@ -77,6 +111,7 @@ header {
   background-color: #e8e8e8;
   background-image: url("../image/main1920.jpg");
   background-position: top center;
+  background-repeat: no-repeat;
 }
 
 .slogan__title {
@@ -117,10 +152,36 @@ header {
 }
 
 .why-work__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 420px;
   align-items: center;
+}
+
+/*why-work__item why-work__item--gift*/
+
+.why-work__item::before {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.why-work__item--gift::before {
+  background-image: url("../image/icon-gift.svg");
+}
+
+.why-work__item--quality::before {
+  background-image: url("../image/icon-quality.svg");
+}
+
+.why-work__item--technology::before {
+  background-image: url("../image/icon-technology.svg");
 }
 
 .why-work__title {
@@ -140,11 +201,22 @@ header {
 
 .profit {
   background-color: #fbf2b5;
-  padding-left: 50px;
-  padding-right: 50px;
+}
+
+.profit__header {
+  align-items: flex-start;
+}
+
+.profit .container {
+  background-image: url("../image/bg-profit960.jpg");
+  background-position: top right;
+  /*background-size: 959px, 980px;*/
+  background-repeat: no-repeat;
 }
 
 .profit__block {
+  padding-right: 50px;
+  padding-left: 50px;
   width: 50%;
 }
 
@@ -157,11 +229,62 @@ header {
 }
 
 .profit__item {
+  position: relative;
   width: 250px;
 }
 
 .profit__item:nth-child(2n - 1) {
   margin-right: 50px;
+}
+
+.profit__item::before {
+  position: absolute;
+  top: -50px;
+  left: 20px;
+  width: 60px;
+  height: 60px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.profit__item--antibiotic::before {
+  background-image: url("../image/icon-antibiotic.svg");
+}
+
+.profit__item--taste::before {
+  background-image: url("../image/icon-taste.svg");
+}
+
+.profit__item--benefit::before {
+  background-image: url("../image/icon-benefit.svg");
+}
+
+.profit__item--health::before {
+  background-image: url("../image/icon-health.svg");
+}
+
+.experiment {
+  background-color: #fbf2b5;
+}
+
+.experiment .container {
+  background-image: url("../image/bg-experiment960.jpg");
+  /*background-position: top left;
+  /*background-size: 959px, 980px;*/
+  background-repeat: no-repeat;
+}
+
+.experiment__block {
+  margin-left: 50%;
+  width: 50%;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #a0b266;
 }
 
 /*
