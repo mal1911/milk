@@ -411,39 +411,6 @@ img {
   }
 }
 
-.main__header::after {
-  margin-top: 18px;
-  color: #495057;
-  content: "~~~~~~~~::~~~~~~~~";
-  font-size: 24px;
-  line-height: 40px;
-}
-
-@media (min-width: 1025px) and (max-width: 1919px) {
-  .main__header::after {
-    margin-top: 0.93vw;
-    font-size: 1.25vw;
-    line-height: 2.08vw;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-  .main__header::after {
-    /*margin-top: 14px;
-    font-size: 18px;
-    line-height: 18px;*/
-    margin-top: 1.82vw;
-    font-size: 2.34vw;
-    line-height: 2.34vw;
-  }
-}
-
-@media (max-width: 640px) {
-  .main__header::after {
-    content: "";
-  }
-}
-
 .main__title,
 .main__description,
 .experiment__description {
