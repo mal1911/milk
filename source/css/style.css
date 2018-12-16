@@ -897,11 +897,11 @@ img {
 }
 
 .profit .container {
-  padding-left: 50px;
+  padding-left: 97px;
   background-color: #fbf2b5;
   background-image: url("../image/bg-profit960.jpg");
   background-position: top right;
-  background-size: 50%;
+  background-size: 50% 100%;
   background-repeat: no-repeat;
 }
 
@@ -961,8 +961,8 @@ img {
 .profit__block {
   display: flex;
   flex-direction: column;
-  padding-left: 47px;
-  width: 50%;
+  padding: 0;
+  width: 42%;
   align-items: flex-start;
 }
 
@@ -993,12 +993,12 @@ img {
 
 .profit__list {
   display: flex;
-  margin-top: 56px;
-  margin-bottom: 56px;
+  margin-top: 151px;
+  margin-bottom: 50px;
   padding: 0;
   list-style: none;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
@@ -1031,7 +1031,7 @@ img {
 .profit__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 72px;
+  padding-bottom: 95px;
   width: 350px;
   justify-content: flex-start;
   align-items: flex-start;
@@ -1070,7 +1070,7 @@ img {
   }
 
 }
-
+/*
 .profit__item:nth-child(2n - 1) {
   margin-right: 64px;
 }
@@ -1092,7 +1092,7 @@ img {
     margin-right: 0;
   }
 }
-
+*/
 .profit__item::before {
   width: 80px;
   height: 80px;
@@ -1191,8 +1191,9 @@ img {
 }
 
 .profit__text {
-  margin-top: -2px;
   width: 300px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
@@ -1231,7 +1232,6 @@ img {
 
 .catalog {
   display: flex;
-  height: 1230px;
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
@@ -1342,7 +1342,7 @@ img {
 .catalog__list {
   display: flex;
   margin-top: 116px;
-  margin-bottom: 20px;
+  margin-bottom: 174px;
   padding: 0;
   width: 100%;
   list-style: none;
@@ -1384,8 +1384,8 @@ img {
   display: flex;
   flex-direction: column;
   padding-top: 53px;
-  padding-bottom: 48px;
-  width: 265px;
+  padding-bottom: 43px;
+  width: 332px;
   background-color: #ffffff;
   align-items: center;
 }
@@ -1491,9 +1491,9 @@ img {
   flex-direction: column;
   margin-top: 35px;
   padding-top: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
-  border-top: 2px solid #a0b266;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-top: 1px solid #a9a9a9;
   align-items: center;
 }
 
@@ -1622,7 +1622,11 @@ img {
 }
 
 .catalog__button {
-  width: 150px;
+  width: 160px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #8baa28;
+  border-radius: 5px;
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
@@ -1654,7 +1658,7 @@ img {
   display: flex;
   background-color: #fbf2b5;
   background-image: url("../image/bg-experiment960.jpg");
-  background-size: 50%;
+  background-size: 50% 100%;
   background-repeat: no-repeat;
 }
 
@@ -1679,7 +1683,7 @@ img {
 }
 
 .experiment__header {
-  margin-top: 125px;
+  margin-top: 119px;
   align-items: flex-start;
 }
 
@@ -1712,12 +1716,12 @@ img {
   display: flex;
   flex-direction: column;
   margin-left: 50%;
-  padding-bottom: 150px;
+  padding-bottom: 103px;
   padding-left: 97px;
   width: 50%;
   align-items: flex-start;
 }
-
+/*
 @media (min-width: 1025px) and (max-width: 1919px) {
   .experiment__block {
     padding-bottom: 7.81vw;
@@ -1730,7 +1734,7 @@ img {
     margin-left: 0;
     padding-bottom: 68.61vw;
     /*    padding-bottom: 527px;*/
-    padding-left: 0;
+  /*  padding-left: 0;
     width: 100%;
     align-items: center;
   }
@@ -1741,7 +1745,7 @@ img {
     margin-left: 0;
     /*    padding-bottom: 236px;*/
 
-    padding-bottom: 73.75vw;
+    /*padding-bottom: 73.75vw;
 
     padding-left: 0;
     width: 100%;
@@ -1749,9 +1753,9 @@ img {
   }
 
 }
-
+*/
 .experiment__description {
-  margin-bottom: 21px;
+  /*margin-bottom: 21px;*/
   width: 800px;
   text-align: left;
   line-height: 30px;
@@ -1795,7 +1799,7 @@ img {
   }
 
 }
-
+/*
 .experiment__text {
   margin-top: 19px;
   margin-bottom: 3px;
@@ -1819,7 +1823,7 @@ img {
         margin-top: 17px;
         margin-bottom: 0;
         width: 611px;*/
-    margin-bottom: 0;
+  /*  margin-bottom: 0;
     margin-left: 9.5vw;
     width: 79.55vw;
     font-size: 100%;
@@ -1839,7 +1843,7 @@ img {
         line-height: 17px;
         align-self: flex-start;*/
 
-    margin-top: 5.31vw;
+    /*margin-top: 5.31vw;
     margin-bottom: 0;
     margin-left: 5.31vw;
     width: 85.93vw;
@@ -1849,6 +1853,19 @@ img {
 
   }
 
+}
+*/
+
+.experiment__list {
+  margin-top: 80px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.experiment__item {
+  width: 730px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .footer {
