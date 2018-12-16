@@ -128,16 +128,13 @@ img {
 }
 
 .button:hover {
-  border-color: #455c16;
-  background-color: #a0b266;
-  color: #455c16;
+  background-color: #fec146;
 }
 
 .button:active,
 .button:focus {
   outline: none;
-  background-color: #455c16;
-  color: #ffffff;
+  background-color: #c7811e;
 }
 
 .header .container {
@@ -1921,6 +1918,10 @@ img {
   font-weight: 500;
   font-size: 133%;
   line-height: 40px;
+}
+
+.footer__link {
+  color: #495057;;
 }
 
 @media (min-width: 1025px) and (max-width: 1919px) {
