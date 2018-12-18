@@ -93,7 +93,6 @@ img {
   .button {
     padding-top: 1.04vw;
     padding-bottom: 1.04vw;
-    border: 0.26vw solid #a0b266;
     border-radius: 2.6vw;
     font-weight: 600;
     font-size: 115%;
@@ -104,7 +103,6 @@ img {
   .button {
     padding-top: 2.5vw;
     padding-bottom: 2.5vw;
-    border: 0.62vw solid #a0b266;
     border-radius: 6.25vw;
     font-weight: 600;
     font-size: 115%;
@@ -200,9 +198,9 @@ img {
 
 @media (max-width: 640px) {
   .header__right {
-    margin-top: 0;
-    margin-bottom: 2.81vw;
-    width: 28.43vw;
+    margin-top: -1.87vw;
+    margin-bottom: 4.81vw;
+    width: 25vw;
   }
 }
 
@@ -1238,7 +1236,7 @@ img {
   padding-top: 14px;
   padding-right: 40px;
   padding-left: 40px;
-  border-top: 1px solid #a9a9a9;
+  border-top: 1px solid #e5e5e5;
   align-items: center;
 }
 
@@ -1248,7 +1246,7 @@ img {
     padding-top: 0.72vw;
     padding-right: 2.08vw;
     padding-left: 2.08vw;
-    border-top: 0.05vw solid #a9a9a9;
+    border-top: 0.05vw solid #e5e5e5;
   }
 }
 
@@ -1258,7 +1256,7 @@ img {
     padding-top: 1.82vw;
     padding-right: 5.2vw;
     padding-left: 5.2vw;
-    border-top: 0.26vw solid #a9a9a9;
+    border-top: 0.26vw solid #e5e5e5;
   }
 }
 
@@ -1342,6 +1340,15 @@ img {
   background-color: #8baa28;
 }
 
+.catalog__button:hover {
+  background-color: #a0b266;
+}
+
+.catalog__button:active,
+.catalog__button:focus {
+  background-color: #455c16;
+}
+
 @media (min-width: 1025px) and (max-width: 1919px) {
   .catalog__button {
     padding-top: 0.52vw;
@@ -1397,7 +1404,7 @@ img {
     padding-bottom: 62.81vw;
     background-image: url("../image/bg-experiment320.jpg");
     background-position: 0 136.25vw;
-    background-size: auto;
+    background-size: 100%;
   }
 }
 
